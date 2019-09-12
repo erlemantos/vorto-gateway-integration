@@ -103,7 +103,7 @@ IDeviceAdapter getAdapter(String mappingSpec);
 This factory is then exposed as an OSGI service which you can retrieve following the next section.
 
 ### The Device Adapter OSGI service
-The Device Adapter OSGI Service Bundle with implementations for BLE-GATT can be downloaded [here]() and cloned from [here]().
+The Device Adapter OSGI Service Bundle with implementations for BLE-GATT can be downloaded [here](https://github.com/erlemantos/vorto-gateway-integration/raw/master/bin/plugins/org.eclipse.vorto.deviceadapter_1.0.0.201909121312.jar) and cloned from [here](https://github.com/erlemantos/vorto-gateway-integration).
 
 The OSGI service (*IVortoDeviceAdapters*) is a factory that when giving a mapping specification with stereotypes for BLE-GATT, will return a Device Adapter (*IDeviceAdapter*) that can do discovery and retrieve information model and function block values from a BLE device.
 
@@ -131,7 +131,7 @@ IDeviceAdapter deviceAdapter = deviceAdapters.getAdapter(mappingSpec);
 ## Deploying and Running the Generated Bundle
 
 ### Prerequisites to deployment
-Before you can deploy and run the bundle though, you need to download the Vorto Device Adapter Bundle for BLE-GATT first [here]() or clone it and build it yourself [here](). You will also need to [download]() the Cloud Service Provider bundle which we will discuss some other time. Now, deploy both bundles to your IoT Gateway.
+Before you can deploy and run the bundle though, you need to download the Vorto Device Adapter Bundle for BLE-GATT first [here](https://github.com/erlemantos/vorto-gateway-integration/raw/master/bin/plugins/org.eclipse.vorto.deviceadapter_1.0.0.201909121312.jar) or clone it and build it yourself [here](https://github.com/erlemantos/vorto-gateway-integration). You will also need to [download](https://github.com/erlemantos/vorto-gateway-integration/raw/master/bin/plugins/org.eclipse.vorto.cloudservice_1.0.0.201909121312.jar) the Cloud Service Provider bundle which we will discuss some other time. Now, deploy both bundles to your IoT Gateway.
 
 ### Configuration of the Bundle
 To configure the bundle, you will need to replace the values in the Activator for NAMESPACE and TENANT with the values that you provisioned your gateway with. You also need to download your mapping specification file and put it on the root of the bundle and specify the name in MAPPING_SPEC.
@@ -157,7 +157,7 @@ To provision your device, we follow the same steps that you did for provisioning
 
 ## Installing the Vorto Cloud Service Provider
 
-You can download the Vorto Cloud Service Provider from [here]() or clone it from [here]() and build it yourself.
+You can download the Vorto Cloud Service Provider from [here](https://github.com/erlemantos/vorto-gateway-integration/raw/master/bin/plugins/org.eclipse.vorto.cloudservice_1.0.0.201909121312.jar) or clone it from [here](https://github.com/erlemantos/vorto-gateway-integration) and build it yourself.
 
 This OSGI bundle provides an **ICloudServiceProvider** service which acts as the factory for the **ICloudService**.
 
