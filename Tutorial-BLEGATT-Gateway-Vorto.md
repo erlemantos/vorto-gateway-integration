@@ -4,7 +4,7 @@ The objective of this tutorial is to show how to connect a BLE-GATT Device to th
 
 This is the architecture that we are implementing:
 
-<< graphic from wiki >>
+![alt text](Archi.png "Screenshot1")
 
 The idea is to drive the discovery and retrieval of data from the device with Vorto Mappings and use the device's Vorto model as the structure of the device's data. A functional item can then be instantiated based on the discovered devices and their values. Furthermore, some thoughts on data harmonization and how to achieve it is given as an added extra.
 
@@ -41,7 +41,7 @@ We can map the accelerometer values by the following mapping code:
 
 Here's how it would look like in Vorto:
 
-![alt text](MappingAccelerometerPayload.png "Screenshot1")
+![alt text](MappingAccelerometerPayload.png "Screenshot2")
 
 ### Adding metadata for discovery and protocol
 
