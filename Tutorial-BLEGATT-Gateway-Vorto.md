@@ -139,7 +139,7 @@ To configure the bundle, you will need to replace the values in the Activator fo
 Afterwards, you can now deploy your bundle.
 
 ### Testing BLE Connectivity via the Web Console
-Now you can go to your IoT Gateway's Web Console, to the FIM console and check if a functional item for your TISensorTag is there. The UID should be ***vorto::<DEVICE ID OF TISENSORTAG>::TISensorTag***.
+Now you can go to your IoT Gateway's Web Console, to the FIM console and check if a functional item for your TISensorTag is there. The UID should be ***vorto::[BLUETOOTH ADDRESS OF TISENSORTAG]::TISensorTag***.
 
 ### Testing via Things Dashboard
 If you have a connected gateway, you can check in the Things Dashboard if your device is a feature of the gateway. It should contain accelerometer readings from your sensor.
